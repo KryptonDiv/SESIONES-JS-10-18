@@ -1,0 +1,32 @@
+###
+
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Connor",
+    "age":"33",
+    "email":"sh1997@email.com"
+}
+
+
+###
+
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/639cdc880466119bc3434a20 HTTP/1.1
+
+
+###
+PUT  http://localhost:9000/api/users/639cdc880466119bc3434a20 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "age":"33",
+    "email":"sh1997@email.com"
+}
+
+###
+DELETE  http://localhost:9000/api/users/639cdbb0c19403bef95f3a8d HTTP/1.1
